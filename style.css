@@ -1,0 +1,185 @@
+:root {
+  --bg-color: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  color: #545862;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+main {
+  /* background-color: #f6f6f6; */
+  text-align: center;
+  min-height: calc(100vh - 100px);
+  padding-top: 3%;
+}
+
+section {
+  background-color: white;
+  width: 50%;
+  margin: 35px auto;
+  box-shadow: 0 0 5px #333;
+  border-radius: 0 0 10px 10px;
+}
+
+ul > li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  height: 40px;
+  border-bottom: 2px solid var(--bg-color);
+  position: relative;
+}
+
+ul div,
+ul label {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+ul div > i,
+ul label > i {
+  color: #333;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.item_form > li form {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+footer > p {
+  font-weight: bold;
+  font-size: 23px;
+  color: #333;
+}
+
+.item_form > li p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 15px;
+  color: #545862;
+}
+
+.item_form div > input {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: white;
+  background-image: url(./submit.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.item_form input[type="text"] {
+  width: calc(100% - 40px);
+  height: 30px;
+  padding: 0 15px;
+  padding-bottom: 8px;
+  border: none;
+  font-style: italic;
+  outline: none;
+  font-size: 18px;
+}
+
+.items input[type="text"] {
+  width: calc(100% - 80px);
+  height: 30px;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+  border: none;
+  background-color: transparent;
+}
+
+li[index] {
+  margin: 0;
+  height: 50px;
+  transition: 0.5s background;
+}
+
+.task {
+  background-color: white;
+}
+
+.over {
+  background-color: #c8cace;
+  opacity: 0.2;
+}
+
+.dragStart {
+  background-color: rgb(253, 251, 221);
+}
+
+.checkbox > i {
+  color: white;
+  font-size: 12px;
+  border: 2px solid rgba(51, 51, 51, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ellips {
+  cursor: move;
+}
+
+.trash {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  transition: 0.2s visibility;
+}
+
+ul div:hover i,
+ul label:hover i {
+  opacity: 1;
+}
+
+.contain_footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 8px 8px;
+}
+
+#clear {
+  color: rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+}
+
+#clear:hover {
+  color: rgba(51, 51, 51);
+  text-decoration: underline;
+}
+
+footer {
+  background: linear-gradient(var(--bg-color), #545862);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: blue;
+  text-decoration: none;
+}
