@@ -10,8 +10,8 @@ Click here to see [Live](https://lionrouge1.github.io/To_do_list/)
 ## Built With
 
 - HTML
-- Javascript
 - CSS
+- Javascript
 - Webpack
 
 ## Getting Started
