@@ -12,6 +12,7 @@ Click here to see [Live](https://lionrouge1.github.io/To_do_list/)
 - HTML
 - Javascript
 - CSS
+- Webpack
 
 ## Getting Started
 
@@ -35,7 +36,7 @@ git@github.com:LionRouge1/To_do_list.git
 - GitHub
 - Git
 
-## Authors
+## Author
 
 👤 **Matchoudi**
 
