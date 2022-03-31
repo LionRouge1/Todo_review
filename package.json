@@ -1,5 +1,5 @@
 {
-  "name": "to_do_list",
+  "name": "todo_review",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
@@ -7,20 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LionRouge1/To_do_list.git"
+    "url": "git+https://github.com/LionRouge1/Todo_review.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LionRouge1/To_do_list/issues"
+    "url": "https://github.com/LionRouge1/Todo_review/issues"
   },
-  "homepage": "https://github.com/LionRouge1/To_do_list#readme",
+  "homepage": "https://github.com/LionRouge1/Todo_review#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.6.0",
@@ -36,9 +35,5 @@
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
-  },
-  "dependencies": {
-    "gh-pages": "^3.2.3",
-    "lodash": "^4.17.21"
   }
 }
