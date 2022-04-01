@@ -1,12 +1,21 @@
+ import displayList from "./__mocks__/displayList";
  import TDlist from "./src/TDlist";
 
 test('Add li tag', () => {
+  document.body.innerHTML =
+  '<div>' +
+   '  <ul id="list"></ul>' +
+  '</div>';
   const list = new TDlist(false, 'new task');
-  const nbr = list.addTask();
-  expect(nbr).toBe(1);
+  list.addTask();
+  const ul = document.getElementById('list');
+  displayList(ul, 1);
+  const nbr = document.querySelectorAll('#list li');
+  expect(nbr.length).toBe(1);
 });
 
-test('Add 2 li tag', () => {
+
+test('test local storage', () => {
  const list = new TDlist(false, 'new task');
  expect(list.addTask()).toBe(2);
 });
@@ -14,22 +23,8 @@ test('Add 2 li tag', () => {
 test('Delete li tag', () => {
  document.body.innerHTML =
    '<div>' +
-    '  <ul id="list"> <li class="task"><input type="text" class="description" id="2" value="task"></li></ul>' +
-   '</div>';
- const list = new TDlist();
- expect(list.removeTask("2")).toBe(1);
-});
-
-test('Add 3 li tag', () => {
- const list = new TDlist(false, 'new task');
- expect(list.addTask()).toBe(2);
-});
-
-test('Delete 2 li tag', () => {
- document.body.innerHTML =
-   '<div>' +
     '  <ul id="list">' +
-      '     <li class="task"><input type="text" class="description" id="2" value="task"></li>'+
+      '     <li class="task"><input type="text" class="description" id="1" value="task"></li>'+
       '     <li class="task"><input type="text" class="description" id="2" value="task"></li>'+
     '  </ul>' +
    '</div>';
@@ -39,7 +34,7 @@ test('Delete 2 li tag', () => {
  expect(element.length).toBe(1);
 });
 
-test('Delete 3 li tag', () => {
+test('Delete li tag 2', () => {
  document.body.innerHTML =
    '<div>' +
     '  <ul id="list"> <li class="task"><input type="text" class="description" id="1" value="task"></li></ul>' +

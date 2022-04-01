@@ -54,6 +54,7 @@ export default class TDlist {
       this.list.push(task);
       this.saveList();
     }
+    return this.list.length;
   }
 
   removeTask(taskId) {
@@ -65,6 +66,7 @@ export default class TDlist {
     this.saveList(update);
     const task = document.getElementById(taskId).parentNode;
     task.remove();
+    return update.length;
   }
 
   editTask(who, value) {
