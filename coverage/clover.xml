@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1648810950013" clover="3.2.0">
+  <project timestamp="1648810950013" name="All files">
+    <metrics statements="32" coveredstatements="21" conditionals="15" coveredconditionals="8" methods="10" coveredmethods="6" elements="57" coveredelements="35" complexity="0" loc="32" ncloc="32" packages="1" files="1" classes="1"/>
+    <file name="TDlist.js" path="/home/masoudi/Microverse/Module2/Todo_review/src/TDlist.js">
+      <metrics statements="32" coveredstatements="21" conditionals="15" coveredconditionals="8" methods="10" coveredmethods="6"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="6" type="cond" truecount="1" falsecount="1"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="14" count="6" type="stmt"/>
+      <line num="18" count="0" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="32" count="0" type="stmt"/>
+      <line num="33" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="41" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="51" count="2" type="stmt"/>
+      <line num="56" count="2" type="stmt"/>
+      <line num="57" count="2" type="stmt"/>
+      <line num="59" count="3" type="stmt"/>
+      <line num="63" count="5" type="stmt"/>
+      <line num="64" count="3" type="stmt"/>
+      <line num="65" count="2" type="stmt"/>
+      <line num="66" count="2" type="stmt"/>
+      <line num="68" count="3" type="stmt"/>
+      <line num="69" count="3" type="stmt"/>
+      <line num="70" count="3" type="stmt"/>
+      <line num="71" count="3" type="stmt"/>
+      <line num="75" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="76" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="80" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
