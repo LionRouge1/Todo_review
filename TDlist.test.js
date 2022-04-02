@@ -17,9 +17,8 @@ describe('Testing add funtion', () => {
   test('test local storage', () => {
     const list = new TDlist(false, 'another task');
     expect(list.addTask()).toBe(2);
-  })
+  });
 });
-
 
 describe.each([
   [0, 'task changed'],
@@ -46,25 +45,23 @@ describe.each([
 
 describe('testing remove function', () => {
   test('Delete li tag', () => {
-    document.body.innerHTML =
-      '<div>' +
-       '  <ul id="list">' +
-         '     <li class="task"><input type="text" class="description" id="1" value="task"></li>'+
-         '     <li class="task"><input type="text" class="description" id="2" value="task"></li>'+
-       '  </ul>' +
-      '</div>';
+    document.body.innerHTML = '<div>'
+    + '  <ul id="list">'
+    + '     <li class="task"><input type="text" class="description" id="1" value="task"></li>'
+    + '     <li class="task"><input type="text" class="description" id="2" value="task"></li>'
+    + '  </ul>'
+    + '</div>';
     const list = new TDlist();
-    list.removeTask("2");
-     const element = document.querySelectorAll('#list li');
+    list.removeTask('2');
+    const element = document.querySelectorAll('#list li');
     expect(element.length).toBe(1);
-   });
-   
-   test('Delete li tag 2', () => {
-    document.body.innerHTML =
-      '<div>' +
-       '  <ul id="list"> <li class="task"><input type="text" class="description" id="1" value="task"></li></ul>' +
-      '</div>';
+  });
+
+  test('Delete li tag 2', () => {
+    document.body.innerHTML = '<div>'
+       + '  <ul id="list"> <li class="task"><input type="text" class="description" id="1" value="task"></li></ul>'
+      + '</div>';
     const list = new TDlist();
-    expect(list.removeTask("1")).toBe(0);
-   });
-})
+    expect(list.removeTask('1')).toBe(0);
+  });
+});
