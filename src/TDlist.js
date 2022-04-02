@@ -1,6 +1,3 @@
-import localStorages from "../__mocks__/localStorage";
-
-const localStorage = new localStorages();
 export default class TDlist {
   constructor(completed = false, description = '') {
     this.completed = completed;
