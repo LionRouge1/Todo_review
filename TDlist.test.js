@@ -43,3 +43,28 @@ describe.each([
     expect(list.list[a].Tcompleted).toBe(expected);
   });
 });
+
+describe('testing remove function', () => {
+  test('Delete li tag', () => {
+    document.body.innerHTML =
+      '<div>' +
+       '  <ul id="list">' +
+         '     <li class="task"><input type="text" class="description" id="1" value="task"></li>'+
+         '     <li class="task"><input type="text" class="description" id="2" value="task"></li>'+
+       '  </ul>' +
+      '</div>';
+    const list = new TDlist();
+    list.removeTask("2");
+     const element = document.querySelectorAll('#list li');
+    expect(element.length).toBe(1);
+   });
+   
+   test('Delete li tag 2', () => {
+    document.body.innerHTML =
+      '<div>' +
+       '  <ul id="list"> <li class="task"><input type="text" class="description" id="1" value="task"></li></ul>' +
+      '</div>';
+    const list = new TDlist();
+    expect(list.removeTask("1")).toBe(0);
+   });
+})
