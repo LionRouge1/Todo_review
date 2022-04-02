@@ -1,22 +1,25 @@
 import displayList from './__mocks__/displayList';
 import TDlist from './src/TDlist';
 
-test('Add li tag', () => {
-  document.body.innerHTML = '<div>'
-   + '  <ul id="list"></ul>'
-  + '</div>';
-  const list = new TDlist(false, 'new task');
-  list.addTask();
-  const ul = document.getElementById('list');
-  displayList(ul, 1);
-  const nbr = document.querySelectorAll('#list li');
-  expect(nbr.length).toBe(1);
+describe('Testing add funtion', () => {
+  test('Add li tag', () => {
+    document.body.innerHTML = '<div>'
+     + '  <ul id="list"></ul>'
+    + '</div>';
+    const list = new TDlist(false, 'new task');
+    list.addTask();
+    const ul = document.getElementById('list');
+    displayList(ul, 1);
+    const nbr = document.querySelectorAll('#list li');
+    expect(nbr.length).toBe(1);
+  });
+
+  test('test local storage', () => {
+    const list = new TDlist(false, 'another task');
+    expect(list.addTask()).toBe(2);
+  })
 });
 
-test('test local storage', () => {
-  const list = new TDlist(false, 'another task');
-  expect(list.addTask()).toBe(2);
-});
 
 describe.each([
   [0, 'task changed'],
