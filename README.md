@@ -14,27 +14,39 @@ Click here to see [Live](https://lionrouge1.github.io/To_do_list/)
 - Javascript
 - Webpack
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps:
-
-- Open Terminal.
-- Change the current working directory to the location you want the cloned directory.
-- Enter the following:
-
-```
-git@github.com:LionRouge1/To_do_list.git
-
-```
-
-- Press Enter to create your local clone.
-- run ``cd To_do_list``
-- now you an open the project with any code editor and go live or simply open the `dist/index.html` page with the browser.
-
 ### Prerequisites
+The basic requirements for building the executable are:
 
-- GitHub
-- Git
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+- VSCode or any other equivalent code editor
+- Node Package Manager (For running, debuging, or installing dependancies to be used)
+
+### Setup
+>git clone https://github.com/misheck12/to-do.git
+
+### Install
+Getting packages and debuging with Stylelint
+>npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+Getting packages and debuging with Webhint
+>npm init -y
+>npm install --save-dev hint@6.x
+
+
+
+Getting packages and debuging with Eslint
+>npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+
+### Run tests
+For validation detection using Eslint Run
+>npx eslint .
+
+For validation detection using Webhint Run
+>npx hint .
+
+For validation detection using Stylelint Run
+>npx stylelint "**/*.{css,scss}"
 
 ## Author
 
